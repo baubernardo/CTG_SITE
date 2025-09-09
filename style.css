@@ -1,0 +1,284 @@
+/* Estilos Gerais Baseados na Logo CTG Carreteiros de Horizonte */
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #f5f2e8;
+    color: #3d3d3d;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+a {
+    color: #c72c2c; /* Vermelho da logo para links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    color: #4a5c43; /* Verde da logo para títulos */
+    border-bottom: 2px solid #eab936; /* Amarelo da logo para o detalhe da borda */
+    padding-bottom: 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #e0d9c4;
+    margin: 20px 0;
+}
+
+/* NOVO: Cabeçalho e Rodapé */
+header {
+    background-color: #794a2f; /* Marrom da logo */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+}
+
+footer {
+    background-color: #4a5c43; /* Verde da logo */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+/* Estilos para a lista de eventos (index.php) */
+.evento-item {
+    border: 1px solid #e0d9c4;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.evento-item:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.evento-item h3 {
+    border-bottom: none;
+    margin-top: 0;
+}
+.evento-item h3 a {
+    color: #794a2f; /* Marrom da logo para o título do evento */
+}
+
+/* Estilos para a página de detalhes do evento (evento.php) */
+.evento-detalhe img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilos para a Área Administrativa */
+.admin-container {
+    max-width: 1000px;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th, .admin-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.admin-table th {
+    background-color: #f2f2f2;
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.admin-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* NOVO: Estilos para Formulários */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #4a5c43;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 4px;
+    color: #fff !important;
+    font-weight: bold;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: opacity 0.2s ease;
+}
+.btn:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+button.btn {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+}
+
+.btn-editar { background-color: #eab936; } /* Amarelo */
+.btn-excluir { background-color: #c72c2c; } /* Vermelho */
+.btn-adicionar { background-color: #4a5c43; } /* Verde */
+.btn-voltar { background-color: #794a2f; } /* Marrom */
+
+/* Estilo para o Formulário de Login */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f2e8;
+}
+
+.login-form {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    border-top: 5px solid #4a5c43;
+    text-align: center;
+}
+.login-form img {
+    max-width: 120px;
+    margin-bottom: 20px;
+}
+
+/* Estilos da Navegação Principal */
+.main-nav {
+    background-color: #4a5c43; /* Verde da logo */
+    text-align: center;
+}
+
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.main-nav li {
+    display: inline-block;
+}
+
+.main-nav a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover {
+    background-color: #5f7456;
+    text-decoration: none;
+}
+
+/* Estilo para a aba ativa do menu */
+.main-nav a.active {
+    background-color: #eab936; /* Amarelo da logo */
+    color: #4a5c43;
+}
+
+/* Estilos para a Seção de Invernadas */
+.invernada-categoria {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo em telas pequenas */
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0d9c4;
+}
+
+.invernada-imagem {
+    flex: 1; /* Ocupa uma parte do espaço */
+    min-width: 200px; /* Largura mínima para a imagem */
+    padding-right: 20px;
+}
+
+.invernada-imagem img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.invernada-descricao {
+    flex: 2; /* Ocupa duas partes do espaço, deixando mais espaço para o texto */
+    min-width: 300px; /* Largura mínima para o texto */
+}
+
+.invernada-descricao h3 {
+    border-bottom: none;
+    margin-top: 0;
+    color: #794a2f; /* Marrom da logo */
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 600px) {
+    .invernada-imagem {
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+}
